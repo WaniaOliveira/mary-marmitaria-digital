@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ===== META BÁSICO ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmita A Mari Que Fez | Comida Caseira com Amor e Sabor</title>
+  <meta name="description" content="Marmitas caseiras feitas com carinho: filé de tilápia, frango ao molho, bife acebolado, moela e marmita mista. Peça pelo WhatsApp e receba em casa com rapidez e qualidade.">
+  <meta name="keywords" content="marmita caseira, marmita fitness, comida caseira, entrega de marmita, marmita a mari que fez, restaurante caseiro">
+  <meta name="author" content="A Mari Que Fez">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.amariquefez.com.br/">
+
+  <!-- ===== FAVICON (adicionar arquivo posteriormente) ===== -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <!-- ===== OPEN GRAPH / REDES SOCIAIS ===== -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Marmita A Mari Que Fez | Comida Caseira com Amor e Sabor">
+  <meta property="og:description" content="A melhor comida caseira da região. Peça agora pelo WhatsApp e receba em casa.">
+  <meta property="og:image" content="img/og-image.jpg">
+  <meta property="og:url" content="https://www.amariquefez.com.br/">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ===== SCHEMA.ORG - DADOS ESTRUTURADOS PARA RESTAURANTE ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Marmita A Mari Que Fez",
+    "servesCuisine": "Comida Caseira Brasileira",
+    "priceRange": "$$",
+    "telephone": "+55-00-00000-0000",
+    "image": "img/og-image.jpg",
+    "menu": "https://www.amariquefez.com.br/#portfolio",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Mo-Sa 08:00-18:00"
+  }
+  </script>
+
+  <!-- ===== FONTES (Google Fonts - Fraunces para títulos, Work Sans para corpo, Caveat para toques manuscritos) ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- ===== CSS PRINCIPAL ===== -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================================================== -->
+  <!-- HEADER / NAVEGAÇÃO FIXA                                -->
+  <!-- ===================================================== -->
+  <header class="header" id="header">
+    <div class="header__container">
+
+      <!-- Logo -->
+      <a href="#home" class="header__logo" aria-label="Marmita A Mari Que Fez - Página Inicial">
+        <img src="logo/logo3.png" alt="Logotipo Marmita A Mari Que Fez" class="header__logo-img">
+        <span class="header__logo-text"> Marmita A Mari Que Fez</span>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav class="header__nav" id="header-nav" aria-label="Navegação principal">
+        <ul class="header__menu">
+          <li><a href="#home" class="header__link">Home</a></li>
+          <li><a href="#sobre" class="header__link">Quem Somos</a></li>
+          <li><a href="#portfolio" class="header__link">Nosso Portfólio</a></li>
+          <li><a href="#contato" class="header__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão CTA Header -->
+      <a href="https://wa.me/5561991527783" target="_blank" rel="noopener noreferrer" class="btn btn--primary header__cta">
+        Peça Agora
+      </a>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="header__burger" id="burger-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+
+    <!-- Menu Mobile -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação móvel">
+      <ul class="mobile-menu__list">
+        <li><a href="#home" class="mobile-menu__link">Home</a></li>
+        <li><a href="#sobre" class="mobile-menu__link">Quem Somos</a></li>
+        <li><a href="#portfolio" class="mobile-menu__link">Nosso Portfólio</a></li>
+        <li><a href="#contato" class="mobile-menu__link">Contato</a></li>
+        <li><a href="https://wa.me/5561991527783" target="_blank" rel="noopener noreferrer" class="btn btn--primary mobile-menu__cta">Peça Agora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================================================== -->
+    <!-- HERO - SEÇÃO PRINCIPAL                                 -->
+    <!-- ===================================================== -->
+    <section class="hero" id="home">
+      <div class="hero__bg" data-parallax>
+        <img src="Hero/hero1.png" alt="Filé de tilápia grelhado com acompanhamentos" class="hero__bg-img" id="hero-bg-img">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__carousel-controls">
+        <button type="button" class="hero__carousel-btn" id="hero-carousel-prev" aria-label="Imagem anterior">‹</button>
+        <button type="button" class="hero__carousel-btn" id="hero-carousel-next" aria-label="Próxima imagem">›</button>
+      </div>
+      <div class="hero__carousel-dots" id="hero-carousel-dots" aria-label="Indicadores do carrossel"></div>
+
+      <!-- Selo assinatura: carimbo "Feito com Carinho" -->
+      <div class="hero__stamp" aria-hidden="true">
+        <span>Feito com carinho</span>
+      </div>
+
+      <div class="hero__container">
+        <div class="hero__content" data-reveal="fade-right">
+          <p class="hero__eyebrow">Comida caseira de verdade</p>
+          <h1 class="hero__title">A melhor comida <span class="hero__title-highlight">caseira</span> da região.</h1>
+          <p class="hero__subtitle">
+            Marmitas preparadas na hora, com tempero de casa e ingredientes fresquinhos.
+            Peça agora e receba no conforto do seu lar, com toda a rapidez que você merece.
+          </p>
+          <div class="hero__actions">
+            <a href="https://wa.me/5561991527783" target="_blank" rel="noopener noreferrer" class="btn btn--primary hero__cta-btn">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.762.462 3.485 1.34 5.002L2 22l5.116-1.341a9.96 9.96 0 004.888 1.246h.004c5.514 0 9.997-4.483 9.997-9.997 0-2.67-1.04-5.18-2.928-7.068a9.935 9.935 0 00-7.073-2.837zm0 18.166h-.003a8.28 8.28 0 01-4.223-1.157l-.303-.18-3.035.796.81-2.959-.198-.304a8.264 8.264 0 01-1.267-4.402c0-4.567 3.716-8.283 8.286-8.283a8.23 8.23 0 015.858 2.428 8.226 8.226 0 012.427 5.859c-.001 4.567-3.717 8.283-8.352 8.203z"/></svg>
+              Peça pelo WhatsApp
+            </a>
+            <a href="#portfolio" class="btn btn--outline">Ver Cardápio</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para próxima seção">
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- QUEM SOMOS                                             -->
+    <!-- ===================================================== -->
+    <section class="sobre" id="sobre">
+      <div class="section-container sobre__grid">
+
+        <div class="sobre__image" data-reveal="fade-right">
+          <img src="Hero/hero10.jpeg" alt="Cozinheira preparando marmitas caseiras com cuidado" loading="lazy">
+          <div class="sobre__image-frame" aria-hidden="true"></div>
+        </div>
+
+        <div class="sobre__content" data-reveal="fade-left">
+          <p class="section-eyebrow">Quem Somos</p>
+          <h2 class="section-title">Uma cozinha que carrega <em>história</em> em cada marmita</h2>
+          <p class="sobre__text">
+            A Mari Que Fez nasceu do simples desejo de levar até você o sabor de uma refeição
+            preparada como em casa — com ingredientes frescos, tempero na medida certa e todo o
+            cuidado de quem cozinha por amor ao que faz.
+          </p>
+
+          <div class="sobre__pillars">
+            <div class="pillar" data-reveal="fade-up">
+              <div class="pillar__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M8 7c0 4 8 4 8 0M6 21h12"/></svg>
+              </div>
+              <h3 class="pillar__title">Missão</h3>
+              <p class="pillar__text">Preparar refeições caseiras de qualidade, com ingredientes frescos e preparo cuidadoso, oferecendo sabor, acessibilidade e agilidade.</p>
+            </div>
+
+            <div class="pillar" data-reveal="fade-up">
+              <div class="pillar__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <h3 class="pillar__title">Visão</h3>
+              <p class="pillar__text">Ser referência em marmitas caseiras da região, reconhecida pela qualidade, excelência no atendimento e confiança dos clientes.</p>
+            </div>
+
+            <div class="pillar" data-reveal="fade-up">
+              <div class="pillar__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m12 21-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21Z"/></svg>
+              </div>
+              <h3 class="pillar__title">Valores</h3>
+              <p class="pillar__text">Qualidade, higiene, honestidade, pontualidade, atendimento humanizado, compromisso, respeito e sabor caseiro em cada detalhe.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- DIFERENCIAIS                                           -->
+    <!-- ===================================================== -->
+    <section class="diferenciais">
+      <div class="section-container">
+        <p class="section-eyebrow section-eyebrow--center">Por que escolher a gente</p>
+        <h2 class="section-title section-title--center">Nossos Diferenciais</h2>
+
+        <div class="diferenciais__grid">
+          <div class="diferencial-card" data-reveal="fade-up">
+            <div class="diferencial-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v6M12 2c-4 2-4 6-4 6M12 2c4 2 4 6 4 6M5 10h14l-1.5 10a2 2 0 0 1-2 1.8H8.5a2 2 0 0 1-2-1.8L5 10Z"/></svg>
+            </div>
+            <h3>Ingredientes Frescos</h3>
+            <p>Selecionamos o melhor a cada dia para garantir sabor e qualidade em cada prato.</p>
+          </div>
+
+          <div class="diferencial-card" data-reveal="fade-up">
+            <div class="diferencial-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </div>
+            <h3>Entrega Rápida</h3>
+            <p>Sua marmita quentinha, no horário certo, direto na sua casa ou trabalho.</p>
+          </div>
+
+          <div class="diferencial-card" data-reveal="fade-up">
+            <div class="diferencial-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l2 5 4-14 2 9h6"/></svg>
+            </div>
+            <h3>Comida Caseira</h3>
+            <p>O tempero e o carinho de quem cozinha pensando no seu bem-estar.</p>
+          </div>
+
+          <div class="diferencial-card" data-reveal="fade-up">
+            <div class="diferencial-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/></svg>
+            </div>
+            <h3>Preço Justo</h3>
+            <p>Qualidade que cabe no seu bolso, sem abrir mão do sabor.</p>
+          </div>
+
+          <div class="diferencial-card" data-reveal="fade-up">
+            <div class="diferencial-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v12H7l-3 3V4Z"/></svg>
+            </div>
+            <h3>Qualidade Garantida</h3>
+            <p>Higiene e padrão em cada etapa do preparo, do início ao fim.</p>
+          </div>
+
+          <div class="diferencial-card" data-reveal="fade-up">
+            <div class="diferencial-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-8.66 15L2 22l5.14-1.3A10 10 0 1 0 12 2Z"/></svg>
+            </div>
+            <h3>Atendimento pelo WhatsApp</h3>
+            <p>Fale com a gente e faça seu pedido de forma rápida e prática.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- NOSSO PORTFÓLIO / GALERIA                              -->
+    <!-- ===================================================== -->
+    <section class="portfolio" id="portfolio">
+      <div class="section-container">
+        <p class="section-eyebrow section-eyebrow--center">Sabores que contam histórias</p>
+        <h2 class="section-title section-title--center">Nosso Portfólio</h2>
+
+        <!-- Filtros de categoria -->
+        <div class="portfolio__filters" role="tablist" aria-label="Filtrar portfólio por categoria">
+          <button class="portfolio__filter is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="portfolio__filter" data-filter="tilapia" role="tab" aria-selected="false">Filé de Tilápia</button>
+          <button class="portfolio__filter" data-filter="frango" role="tab" aria-selected="false">Frango ao Molho</button>
+          <button class="portfolio__filter" data-filter="feijoada" role="tab" aria-selected="false">Feijoada</button>
+          <button class="portfolio__filter" data-filter="bife" role="tab" aria-selected="false">Bife Acebolado</button>
+          <button class="portfolio__filter" data-filter="moela" role="tab" aria-selected="false">Moela</button>
+          <button class="portfolio__filter" data-filter="mista" role="tab" aria-selected="false">Marmita Mista</button>
+          <button class="portfolio__filter" data-filter="entrega" role="tab" aria-selected="false">Entrega</button>
+        </div>
+
+        <!-- Grid de cards -->
+        <div class="portfolio__grid">
+          <figure class="portfolio-card" data-category="tilapia" data-reveal="zoom">
+            <img src="Hero/hero1.png" alt="Filé de tilápia grelhado com acompanhamentos" loading="lazy">
+            <figcaption class="portfolio-card__caption">
+              <div>
+                <h3>Filé de Tilápia</h3>
+              </div>
+              <button type="button" class="portfolio-card__button" data-portfolio-id="tilapia">Ver Mais</button>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-card" data-category="frango" data-reveal="zoom">
+            <img src="Hero/hero2.png" alt="Frango ao molho servido com arroz e salada" loading="lazy">
+            <figcaption class="portfolio-card__caption">
+              <div>
+                <h3>Frango ao Molho</h3>
+              </div>
+              <button type="button" class="portfolio-card__button" data-portfolio-id="frango">Ver Mais</button>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-card" data-category="feijoada" data-reveal="zoom">
+            <img src="Hero/hero3.png" alt="Feijoada caseira com arroz e farofa" loading="lazy">
+            <figcaption class="portfolio-card__caption">
+              <div>
+                <h3>Feijoada</h3>
+              </div>
+              <button type="button" class="portfolio-card__button" data-portfolio-id="feijoada">Ver Mais</button>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-card" data-category="bife" data-reveal="zoom">
+            <img src="Hero/hero4.png" alt="Bife acebolado suculento com cebolas caramelizadas" loading="lazy">
+            <figcaption class="portfolio-card__caption">
+              <div>
+                <h3>Bife Acebolado</h3>
+              </div>
+              <button type="button" class="portfolio-card__button" data-portfolio-id="bife">Ver Mais</button>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-card" data-category="moela" data-reveal="zoom">
+            <img src="Hero/hero11.png" alt="Moela ao molho temperada e bem servida" loading="lazy">
+            <figcaption class="portfolio-card__caption">
+              <div>
+                <h3>Moela ao Molho</h3>
+              </div>
+              <button type="button" class="portfolio-card__button" data-portfolio-id="moela">Ver Mais</button>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-card" data-category="mista" data-reveal="zoom">
+            <img src="Hero/hero12.png" alt="Marmita mista completa com variados acompanhamentos" loading="lazy">
+            <figcaption class="portfolio-card__caption">
+              <div>
+                <h3>Marmita Mista</h3>
+              </div>
+              <button type="button" class="portfolio-card__button" data-portfolio-id="mista">Ver Mais</button>
+            </figcaption>
+          </figure>
+
+          <figure class="portfolio-card" data-category="entrega" data-reveal="zoom">
+            <img src="Hero/hero6.png" alt="Entregador levando marmita quentinha até o cliente" loading="lazy">
+            <figcaption class="portfolio-card__caption">
+              <div>
+                <h3>Entrega</h3>
+              </div>
+              <button type="button" class="portfolio-card__button" data-portfolio-id="entrega">Ver Mais</button>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="portfolio-modal" id="portfolio-modal" aria-hidden="true" hidden>
+        <div class="portfolio-modal__overlay" id="portfolio-modal-overlay"></div>
+        <div class="portfolio-modal__panel" role="dialog" aria-labelledby="portfolio-modal-title" aria-describedby="portfolio-modal-description">
+          <button class="portfolio-modal__close" id="portfolio-modal-close" aria-label="Fechar modal">×</button>
+
+          <div class="portfolio-modal__content">
+            <div class="portfolio-modal__image-wrap">
+              <img src="" alt="" class="portfolio-modal__image" id="portfolio-modal-image">
+              <span class="portfolio-modal__zoom-hint">Clique para ampliar</span>
+            </div>
+
+            <div class="portfolio-modal__info">
+              <p class="section-eyebrow">Detalhes do Prato</p>
+              <h3 id="portfolio-modal-title"></h3>
+              <p id="portfolio-modal-description" class="portfolio-modal__description"></p>
+
+              <div class="portfolio-modal__section">
+                <h4>Acompanhamentos</h4>
+                <ul class="portfolio-modal__list" id="portfolio-modal-accompaniments"></ul>
+              </div>
+
+              <div class="portfolio-modal__section">
+                <h4>Como é preparado</h4>
+                <p id="portfolio-modal-prep"></p>
+              </div>
+
+              <div class="portfolio-modal__badges" id="portfolio-modal-badges"></div>
+
+              <a href="#" class="btn btn--primary portfolio-modal__cta" id="portfolio-modal-whatsapp" target="_blank" rel="noopener noreferrer">Pedir pelo WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- DEPOIMENTOS                                            -->
+    <!-- ===================================================== -->
+    <section class="depoimentos">
+      <div class="section-container">
+        <p class="section-eyebrow section-eyebrow--center">O que dizem sobre nós</p>
+        <h2 class="section-title section-title--center">Depoimentos</h2>
+
+        <div class="testimonial-carousel" id="testimonial-carousel">
+          <div class="testimonial-track" id="testimonial-track">
+
+            <article class="testimonial-slide">
+              <div class="testimonial-slide__stars" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
+              <p class="testimonial-slide__text">"A melhor marmita que já pedi! Parece feita pela minha própria mãe, com muito carinho e tempero de casa."</p>
+              <div class="testimonial-slide__author">
+                <img src="imgdepoimentos/cliente1.jpeg" alt="Foto da cliente Heryka Ferreira" loading="lazy">
+                <div>
+                  <strong>Heryka Ferreira</strong>
+                  <span>Samambaia-Sul</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-slide">
+              <div class="testimonial-slide__stars" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
+              <p class="testimonial-slide__text">"Entrega super rápida e a comida chega quentinha. O bife acebolado é maravilhoso!"</p>
+              <div class="testimonial-slide__author">
+                <img src="imgdepoimentos/cliente2.jpeg" alt="Foto do cliente Pedro Enrique" loading="lazy">
+                <div>
+                  <strong>Pedro Enrique</strong>
+                  <span>Samambaia-Norte</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-slide">
+              <div class="testimonial-slide__stars" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
+              <p class="testimonial-slide__text">"Atendimento nota mil e a marmita mista tem um tempero incrível. Já virei cliente fiel!"</p>
+              <div class="testimonial-slide__author">
+                <img src="imgdepoimentos/cliente3.png" alt="Foto da cliente Vanessa Oliveira" loading="lazy">
+                <div>
+                  <strong>Vanessa Oliveira</strong>
+                  <span>Samambaia-Norte</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="testimonial-carousel__controls">
+            <button class="testimonial-carousel__btn" id="testimonial-prev" aria-label="Depoimento anterior">&#8592;</button>
+            <div class="testimonial-carousel__dots" id="testimonial-dots"></div>
+            <button class="testimonial-carousel__btn" id="testimonial-next" aria-label="Próximo depoimento">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- CTA - CHAMADA PARA AÇÃO                                -->
+    <!-- ===================================================== -->
+    <section class="cta">
+      <div class="cta__bg">
+        <img src="img/cta-bg.jpg" alt="" aria-hidden="true" loading="lazy">
+        <div class="cta__overlay"></div>
+      </div>
+      <div class="section-container cta__content" data-reveal="fade-up">
+        <h2 class="cta__title">Peça agora mesmo sua marmita.</h2>
+        <p class="cta__subtitle">Sabor de casa, entregue com carinho até você.</p>
+        <a href="https://wa.me/5561991527783" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large">
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- CONTATO                                                -->
+    <!-- ===================================================== -->
+    <section class="contato" id="contato">
+      <div class="section-container contato__grid">
+
+        <div class="contato__info" data-reveal="fade-right">
+          <p class="section-eyebrow">Fale Conosco</p>
+          <h2 class="section-title">Contato</h2>
+          <p class="contato__text">Estamos prontos para atender você. Escolha a forma mais fácil de falar com a gente.</p>
+
+          <div class="contato__buttons">
+            <a href="https://wa.me/5561991527783" target="_blank" rel="noopener noreferrer" class="contato__btn contato__btn--whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://instagram.com/waniaoliveiras" target="_blank" rel="noopener noreferrer" class="contato__btn contato__btn--instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/><path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/><circle cx="18.406" cy="5.594" r="1.44"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/share/1bAFSmjivN/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="contato__btn contato__btn--facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.02 3.657 9.184 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.877h2.773l-.443 2.91h-2.33V22c4.78-.756 8.437-4.92 8.437-9.94z"/></svg>
+              Facebook
+            </a>
+          </div>
+
+          <div class="contato__hours">
+            <h3>Horário de Funcionamento</h3>
+            <p>Segunda a Sábado — 08h às 14h</p>
+          </div>
+
+          <div class="contato__location">
+            <h3>Localização</h3>
+            <p>QR 408/14/06, Samambaia Norte, Distrito Federal</p>
+          </div>
+        </div>
+
+        <div class="contato__map" data-reveal="fade-left">
+          <iframe
+            src="https://www.google.com/maps?q=QR+408%2F14%2F06,+Samambaia+Norte,+Distrito+Federal&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de localização - Marmita A Mari Que Fez">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================== -->
+  <!-- RODAPÉ                                                 -->
+  <!-- ===================================================== -->
+  <footer class="footer">
+    <div class="section-container footer__grid">
+      <div class="footer__brand">
+        <img src="logo/logo3.png" alt="Logotipo Marmita A Mari Que Fez" class="footer__logo">
+        <p>Comida caseira feita com carinho, todos os dias para você.</p>
+      </div>
+
+      <div class="footer__social">
+        <a href="https://instagram.com/waniaoliveiras" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Marmita A Mari Que Fez">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/1bAFSmjivN/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Marmita A Mari Que Fez">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.02 3.657 9.184 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.877h2.773l-.443 2.91h-2.33V22c4.78-.756 8.437-4.92 8.437-9.94z"/></svg>
+        </a>
+        <a href="https://wa.me/5561991527783" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Marmita A Mari Que Fez">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="current-year"></span> Marmita A Mari Que Fez. Todos os direitos reservados @WâniaOLiveira.</p>
+    </div>
+  </footer>
+
+  <!-- ===================================================== -->
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP                            -->
+  <!-- ===================================================== -->
+  <a href="https://wa.me/5561991527783" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.762.462 3.485 1.34 5.002L2 22l5.116-1.341a9.96 9.96 0 004.888 1.246h.004c5.514 0 9.997-4.483 9.997-9.997 0-2.67-1.04-5.18-2.928-7.068a9.935 9.935 0 00-7.073-2.837zm0 18.166h-.003a8.28 8.28 0 01-4.223-1.157l-.303-.18-3.035.796.81-2.959-.198-.304a8.264 8.264 0 01-1.267-4.402c0-4.567 3.716-8.283 8.286-8.283a8.23 8.23 0 015.858 2.428 8.226 8.226 0 012.427 5.859c-.001 4.567-3.717 8.283-8.352 8.203z"/></svg>
+  </a>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="script.js" defer></script>
+</body>
+</html>
