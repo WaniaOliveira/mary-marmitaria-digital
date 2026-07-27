@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroBg = document.querySelector('[data-parallax]');
   const heroBgImg = heroBg ? heroBg.querySelector('.hero__bg-img') : null;
 
-  const heroCarouselImages = [
+    const heroCarouselImages = [
     { src: 'banner/hero1.png', alt: 'Filé de tilápia grelhado com acompanhamentos' },
     { src: 'banner/hero2.png', alt: 'Frango ao molho servido com arroz e salada' },
     { src: 'banner/hero3.png', alt: 'Feijoada caseira com arroz e farofa' },
@@ -195,10 +195,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const portfolioModalWhatsapp = document.getElementById('portfolio-modal-whatsapp');
   const portfolioModalImageWrap = document.querySelector('.portfolio-modal__image-wrap');
 
-  const portfolioData = {
+    const portfolioData = {
     tilapia: {
       name: 'Filé de Tilápia',
-      image: 'Hero/hero1.png',
+      image: 'banner/hero1.png',
       description: 'Filé de tilápia cuidadosamente temperado e frito até atingir uma textura crocante por fora e macia por dentro.',
       accompaniments: ['Arroz branco', 'Feijão', 'Farofa', 'Legumes frescos'],
       preparation: 'Preparado diariamente com ingredientes frescos, temperos selecionados e cozimento artesanal para garantir sabor e qualidade.',
@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     frango: {
       name: 'Frango ao Molho',
-      image: 'Hero/hero2.png',
+      image: 'banner/hero2.png',
       description: 'Frango ao molho caseiro, macio e suculento, servido com um tempero que lembra aquele almoço de família.',
       accompaniments: ['Arroz branco', 'Purê de batata', 'Salada verde', 'Farofa crocante'],
       preparation: 'Cozido com cuidado e temperos especiais, garantindo um molho cremoso e sabor marcante a cada garfada.',
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     feijoada: {
       name: 'Feijoada',
-      image: 'Hero/hero3.png',
+      image: 'banner/hero3.png',
       description: 'Feijoada completa com carne de qualidade, acompanhada de arroz, farofa e couve para uma experiência tradicional e reconfortante.',
       accompaniments: ['Arroz branco', 'Farofa', 'Couve refogada', 'Laranja fatiada'],
       preparation: 'Preparada lentamente com ingredientes selecionados e temperos caseiros para extrair todo o sabor típico brasileiro.',
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     bife: {
       name: 'Bife Acebolado',
-      image: 'Hero/hero4.png',
+      image: 'banner/hero4.png',
       description: 'Bife acebolado suculento, grelhado na medida certa e servido com cebolas caramelizadas que realçam o sabor.',
       accompaniments: ['Arroz branco', 'Batata frita', 'Salada fresca', 'Vinagrete'],
       preparation: 'Cozido com cuidado em fogo médio para manter a suculência, acompanhado de cebolas douradas no ponto perfeito.',
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     moela: {
       name: 'Moela ao Molho',
-      image: 'Hero/hero11.png',
+      image: 'banner/hero11.png',
       description: 'Moela ao molho enriquecida com temperos selecionados, ideal para quem procura um prato cheio de personalidade.',
       accompaniments: ['Arroz branco', 'Purê de mandioca', 'Salada de tomate', 'Farofa'],
       preparation: 'Cozida lentamente até ficar macia e saborosa, com um molho encorpado que penetra em cada pedaço.',
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     mista: {
       name: 'Marmita Mista',
-      image: 'Hero/hero12.png',
+      image: 'banner/hero12.png',
       description: 'Marmita mista completa com variedade de sabores, ideal para quem deseja uma refeição equilibrada e prática.',
       accompaniments: ['Arroz branco', 'Feijão', 'Salada', 'Acompanhamento do dia'],
       preparation: 'Montada com ingredientes frescos e preparada diariamente para manter o sabor autêntico e caseiro.',
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     entrega: {
       name: 'Entrega',
-      image: 'Hero/hero6.png',
+      image: 'banner/hero6.png',
       description: 'Serviço de entrega rápida e segura para que você receba a comida quentinha direto em sua casa.',
       accompaniments: ['Opções variadas', 'Embalagem segura', 'Condimentos incluídos'],
       preparation: 'Preparamos e entregamos com todo cuidado para preservar o sabor e a temperatura ideal até sua casa.',
