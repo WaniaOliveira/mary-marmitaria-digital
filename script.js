@@ -56,17 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroBgImg = heroBg ? heroBg.querySelector('.hero__bg-img') : null;
 
   const heroCarouselImages = [
-    { src: 'Hero/hero1.png', alt: 'Filé de tilápia grelhado com acompanhamentos' },
-    { src: 'Hero/hero2.png', alt: 'Frango ao molho servido com arroz e salada' },
-    { src: 'Hero/hero3.png', alt: 'Feijoada caseira com arroz e farofa' },
-    { src: 'Hero/hero4.png', alt: 'Bife acebolado suculento com cebolas caramelizadas' },
-    { src: 'Hero/hero5.png', alt: 'Prato especial da Marmita A Mari Que Fez' },
-    { src: 'Hero/hero6.png', alt: 'Entregador levando marmita quentinha até o cliente' },
-    { src: 'Hero/hero7.png', alt: 'Prato caseiro saboroso preparado com carinho' },
-    { src: 'Hero/hero8.png', alt: 'Refeição apetitoso para solução diária' },
-    { src: 'Hero/hero9.png', alt: 'Marmita caseira com acompanhamentos frescos' },
-    { src: 'Hero/hero11.png', alt: 'Moela ao molho temperada e bem servida' },
-    { src: 'Hero/hero12.png', alt: 'Marmita mista completa com variados acompanhamentos' }
+    { src: 'banner/hero1.png', alt: 'Filé de tilápia grelhado com acompanhamentos' },
+    { src: 'banner/hero2.png', alt: 'Frango ao molho servido com arroz e salada' },
+    { src: 'banner/hero3.png', alt: 'Feijoada caseira com arroz e farofa' },
+    { src: 'banner/hero4.png', alt: 'Bife acebolado suculento com cebolas caramelizadas' },
+    { src: 'banner/hero5.png', alt: 'Prato especial da Marmita A Mari Que Fez' },
+    { src: 'banner/hero6.png', alt: 'Entregador levando marmita quentinha até o cliente' },
+    { src: 'banner/hero7.png', alt: 'Prato caseiro saboroso preparado com carinho' },
+    { src: 'banner/hero8.png', alt: 'Refeição apetitoso para solução diária' },
+    { src: 'banner/hero9.png', alt: 'Marmita caseira com acompanhamentos frescos' },
+    { src: 'banner/hero11.png', alt: 'Moela ao molho temperada e bem servida' },
+    { src: 'banner/hero12.png', alt: 'Marmita mista completa com variados acompanhamentos' }
   ];
   const heroDotsContainer = document.getElementById('hero-carousel-dots');
   const heroPrevBtn = document.getElementById('hero-carousel-prev');
