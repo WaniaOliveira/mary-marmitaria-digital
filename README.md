@@ -34,7 +34,7 @@ Landing page responsiva e otimizada para um serviço de entrega de comida caseir
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/a-mari-que-fez.git
+   git clone https://github.com/WaniaOliveira/mary-marmitaria-digital.git
    ```
 2. Navegue até a pasta do projeto e abra o arquivo `index.html` em seu navegador de preferência.
 
