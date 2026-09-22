@@ -27,7 +27,7 @@ Estrutura do Projeto
 Como executar
 
 Clonar o:
-git clone https://github.com/seu-usuario/a-mari-que-fez.git
+git clone https://github.com/WaniaOliveira/mary-marmitaria-digital.git
 Navegue até a pasta do projeto e abra o arquivo index.html em seu navegador de preferência.
 
 licença
