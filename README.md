@@ -42,6 +42,10 @@ Para executar localmente, clone o repositório e abra o arquivo `index.html` no 
 git clone https://github.com/WaniaOliveira/mary-marmitaria-digital.git
 ```
 
+## Observação
+
+**Observação:** os dados de contato e redes sociais apresentados no site são utilizados para fins demonstrativos neste projeto e podem ser substituídos pelos dados oficiais da empresa após a publicação definitiva.
+
  Licença
 
 Este projeto foi desenvolvido para a marca **Marmita A Mari Que Fez**. Todos os direitos de imagem e marca são reservados.
