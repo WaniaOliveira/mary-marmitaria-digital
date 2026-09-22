@@ -30,13 +30,17 @@ Landing page responsiva e otimizada para um serviço de entrega de comida caseir
 └── script.js           # Lógica de interatividade
 ```
 
- Como executar
+## Como visualizar
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/WaniaOliveira/mary-marmitaria-digital.git
-   ```
-2. Navegue até a pasta do projeto e abra o arquivo `index.html` em seu navegador de preferência.
+Acesse a versão publicada no GitHub Pages:
+
+https://waniaoliveira.github.io/mary-marmitaria-digital/
+
+Para executar localmente, clone o repositório e abra o arquivo `index.html` no navegador:
+
+```bash
+git clone https://github.com/WaniaOliveira/mary-marmitaria-digital.git
+```
 
  Licença
 
