@@ -20,7 +20,6 @@
   --color-wood-dark: #2B1810;      /* marrom madeira escuro (base) */
   --color-wood: #4A2A18;           /* marrom madeira */
   --color-red: #9C2B1F;            /* vermelho brasa */
-  --color-red-deep: #6E1B14;       /* vermelho profundo (hover/sombra) */
   --color-orange: #E1690E;         /* laranja tempero */
   --color-gold: #D3A24B;           /* dourado */
   --color-gold-light: #E8C784;     /* dourado claro (detalhes) */
@@ -764,7 +763,6 @@ button:focus-visible {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  cursor: pointer;
   box-shadow: var(--shadow-soft);
   transition: transform var(--transition-medium), box-shadow var(--transition-medium);
   transform-style: preserve-3d;
@@ -895,6 +893,11 @@ button:focus-visible {
   overflow: hidden;
   border-radius: 24px;
   box-shadow: 0 30px 90px rgba(13, 18, 25, 0.26);
+}
+
+.portfolio-modal__image-wrap:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
 }
 
 .portfolio-modal__image {

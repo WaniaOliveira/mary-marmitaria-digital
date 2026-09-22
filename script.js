@@ -54,8 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
      ------------------------------------------------------------------- */
   const heroBg = document.querySelector('[data-parallax]');
   const heroBgImg = heroBg ? heroBg.querySelector('.hero__bg-img') : null;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    const heroCarouselImages = [
+  const heroCarouselImages = [
     { src: 'banner/hero1.png', alt: 'Filé de tilápia grelhado com acompanhamentos' },
     { src: 'banner/hero2.png', alt: 'Frango ao molho servido com arroz e salada' },
     { src: 'banner/hero3.png', alt: 'Feijoada caseira com arroz e farofa' },
@@ -63,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { src: 'banner/hero5.png', alt: 'Prato especial da Marmita A Mari Que Fez' },
     { src: 'banner/hero6.png', alt: 'Entregador levando marmita quentinha até o cliente' },
     { src: 'banner/hero7.png', alt: 'Prato caseiro saboroso preparado com carinho' },
-    { src: 'banner/hero8.png', alt: 'Refeição apetitoso para solução diária' },
+    { src: 'banner/hero8.png', alt: 'Refeição caseira completa para o dia a dia' },
     { src: 'banner/hero9.png', alt: 'Marmita caseira com acompanhamentos frescos' },
     { src: 'banner/hero11.png', alt: 'Moela ao molho temperada e bem servida' },
     { src: 'banner/hero12.png', alt: 'Marmita mista completa com variados acompanhamentos' }
@@ -95,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevHeroSlide = () => goToHeroSlide(currentHeroIndex - 1);
 
   const startHeroAutoplay = () => {
+    if (prefersReducedMotion) return;
     heroAutoplayTimer = setInterval(nextHeroSlide, 5000);
   };
 
@@ -120,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const handleParallax = () => {
-    if (!heroBgImg) return;
+    if (!heroBgImg || prefersReducedMotion) return;
     const scrollY = window.scrollY;
     // Limita o efeito à altura do Hero para não gerar espaços vazios
     if (scrollY < window.innerHeight) {
@@ -166,10 +168,10 @@ document.addEventListener('DOMContentLoaded', () => {
       // Atualiza estado visual dos botões
       filterButtons.forEach((btn) => {
         btn.classList.remove('is-active');
-        btn.setAttribute('aria-selected', 'false');
+        btn.setAttribute('aria-pressed', 'false');
       });
       button.classList.add('is-active');
-      button.setAttribute('aria-selected', 'true');
+      button.setAttribute('aria-pressed', 'true');
 
       // Mostra ou esconde os cards conforme a categoria
       portfolioCards.forEach((card) => {
@@ -194,6 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const portfolioModalBadges = document.getElementById('portfolio-modal-badges');
   const portfolioModalWhatsapp = document.getElementById('portfolio-modal-whatsapp');
   const portfolioModalImageWrap = document.querySelector('.portfolio-modal__image-wrap');
+  let lastFocusedElement = null;
 
     const portfolioData = {
     tilapia: {
@@ -276,9 +279,11 @@ document.addEventListener('DOMContentLoaded', () => {
     portfolioModalAccompaniments.innerHTML = dish.accompaniments.map(item => `<li>${item}</li>`).join('');
     portfolioModalBadges.innerHTML = dish.badges.map(badge => `<span class="portfolio-modal__badge">${badge}</span>`).join('');
 
+    lastFocusedElement = document.activeElement;
     portfolioModal.hidden = false;
     portfolioModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    portfolioModalClose.focus();
   };
 
   const closePortfolioModal = () => {
@@ -286,6 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
     portfolioModal.setAttribute('aria-hidden', 'true');
     portfolioModalImageWrap.classList.remove('is-zoomed');
     document.body.style.overflow = '';
+    if (lastFocusedElement) lastFocusedElement.focus();
   };
 
   const portfolioButtons = document.querySelectorAll('.portfolio-card__button');
@@ -303,9 +309,33 @@ document.addEventListener('DOMContentLoaded', () => {
     portfolioModalImageWrap.classList.toggle('is-zoomed');
   });
 
+  portfolioModalImageWrap.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      portfolioModalImageWrap.classList.toggle('is-zoomed');
+    }
+  });
+
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && !portfolioModal.hidden) {
+    if (portfolioModal.hidden) return;
+
+    if (event.key === 'Escape') {
       closePortfolioModal();
+      return;
+    }
+
+    if (event.key === 'Tab') {
+      const focusableElements = portfolioModal.querySelectorAll('button:not([disabled]), a[href], [tabindex="0"]');
+      const firstFocusableElement = focusableElements[0];
+      const lastFocusableElement = focusableElements[focusableElements.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstFocusableElement) {
+        event.preventDefault();
+        lastFocusableElement.focus();
+      } else if (!event.shiftKey && document.activeElement === lastFocusableElement) {
+        event.preventDefault();
+        firstFocusableElement.focus();
+      }
     }
   });
 
@@ -354,6 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function startAutoplay() {
+    if (prefersReducedMotion) return;
     autoplayTimer = setInterval(nextSlide, 6000);
   }
 

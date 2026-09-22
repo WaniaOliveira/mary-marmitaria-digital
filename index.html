@@ -19,6 +19,9 @@
   <meta property="og:title" content="Marmita A Mari Que Fez | Comida Caseira com Amor e Sabor">
   <meta property="og:description" content="A melhor comida caseira da região. Peça agora pelo WhatsApp e receba em casa.">
   <meta property="og:image" content="https://waniaoliveira.github.io/mary-marmitaria-digital/banner/hero1.png">
+  <meta name="twitter:title" content="Marmita A Mari Que Fez | Comida Caseira com Amor e Sabor">
+  <meta name="twitter:description" content="A melhor comida caseira da região. Peça agora pelo WhatsApp e receba em casa.">
+  <meta name="twitter:image" content="https://waniaoliveira.github.io/mary-marmitaria-digital/banner/hero1.png">
   <meta property="og:url" content="https://waniaoliveira.github.io/mary-marmitaria-digital/">
   <meta property="og:locale" content="pt_BR">
   <meta name="twitter:card" content="summary_large_image">
@@ -33,7 +36,6 @@
     "priceRange": "$$",
     "telephone": "+55-61-99152-7783",
     "image": "https://waniaoliveira.github.io/mary-marmitaria-digital/banner/hero1.png",
-    "menu": "https://waniaoliveira.github.io/mary-marmitaria-digital/#portfolio",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "BR"
@@ -65,7 +67,7 @@
       </a>
 
       <!-- Navegação Desktop -->
-      <nav class="header__nav" id="header-nav" aria-label="Navegação principal">
+      <nav class="header__nav" aria-label="Navegação principal">
         <ul class="header__menu">
           <li><a href="#home" class="header__link">Home</a></li>
           <li><a href="#sobre" class="header__link">Quem Somos</a></li>
@@ -105,7 +107,7 @@
     <!-- ===================================================== -->
     <section class="hero" id="home">
       <div class="hero__bg" data-parallax>
-        <img src="banner/hero1.png" alt="Filé de tilápia grelhado com acompanhamentos" class="hero__bg-img" id="hero-bg-img">
+        <img src="banner/hero1.png" alt="Filé de tilápia grelhado com acompanhamentos" class="hero__bg-img">
         <div class="hero__overlay"></div>
       </div>
 
@@ -262,15 +264,15 @@
         <h2 class="section-title section-title--center">Nosso Portfólio</h2>
 
         <!-- Filtros de categoria -->
-        <div class="portfolio__filters" role="tablist" aria-label="Filtrar portfólio por categoria">
-          <button class="portfolio__filter is-active" data-filter="all" role="tab" aria-selected="true">Todos</button>
-          <button class="portfolio__filter" data-filter="tilapia" role="tab" aria-selected="false">Filé de Tilápia</button>
-          <button class="portfolio__filter" data-filter="frango" role="tab" aria-selected="false">Frango ao Molho</button>
-          <button class="portfolio__filter" data-filter="feijoada" role="tab" aria-selected="false">Feijoada</button>
-          <button class="portfolio__filter" data-filter="bife" role="tab" aria-selected="false">Bife Acebolado</button>
-          <button class="portfolio__filter" data-filter="moela" role="tab" aria-selected="false">Moela</button>
-          <button class="portfolio__filter" data-filter="mista" role="tab" aria-selected="false">Marmita Mista</button>
-          <button class="portfolio__filter" data-filter="entrega" role="tab" aria-selected="false">Entrega</button>
+        <div class="portfolio__filters" aria-label="Filtrar portfólio por categoria">
+          <button class="portfolio__filter is-active" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="portfolio__filter" data-filter="tilapia" aria-pressed="false">Filé de Tilápia</button>
+          <button class="portfolio__filter" data-filter="frango" aria-pressed="false">Frango ao Molho</button>
+          <button class="portfolio__filter" data-filter="feijoada" aria-pressed="false">Feijoada</button>
+          <button class="portfolio__filter" data-filter="bife" aria-pressed="false">Bife Acebolado</button>
+          <button class="portfolio__filter" data-filter="moela" aria-pressed="false">Moela</button>
+          <button class="portfolio__filter" data-filter="mista" aria-pressed="false">Marmita Mista</button>
+          <button class="portfolio__filter" data-filter="entrega" aria-pressed="false">Entrega</button>
         </div>
 
         <!-- Grid de cards -->
@@ -349,11 +351,11 @@
 
       <div class="portfolio-modal" id="portfolio-modal" aria-hidden="true" hidden>
         <div class="portfolio-modal__overlay" id="portfolio-modal-overlay"></div>
-        <div class="portfolio-modal__panel" role="dialog" aria-labelledby="portfolio-modal-title" aria-describedby="portfolio-modal-description">
+        <div class="portfolio-modal__panel" role="dialog" aria-modal="true" aria-labelledby="portfolio-modal-title" aria-describedby="portfolio-modal-description">
           <button class="portfolio-modal__close" id="portfolio-modal-close" aria-label="Fechar modal">×</button>
 
           <div class="portfolio-modal__content">
-            <div class="portfolio-modal__image-wrap">
+            <div class="portfolio-modal__image-wrap" tabindex="0" role="button" aria-label="Ampliar imagem do prato">
               <img src="" alt="" class="portfolio-modal__image" id="portfolio-modal-image">
               <span class="portfolio-modal__zoom-hint">Clique para ampliar</span>
             </div>
@@ -390,11 +392,11 @@
         <p class="section-eyebrow section-eyebrow--center">O que dizem sobre nós</p>
         <h2 class="section-title section-title--center">Depoimentos</h2>
 
-        <div class="testimonial-carousel" id="testimonial-carousel">
+        <div class="testimonial-carousel">
           <div class="testimonial-track" id="testimonial-track">
 
             <article class="testimonial-slide">
-              <div class="testimonial-slide__stars" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
+              <div class="testimonial-slide__stars" role="img" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
               <p class="testimonial-slide__text">"A melhor marmita que já pedi! Parece feita pela minha própria mãe, com muito carinho e tempero de casa."</p>
               <div class="testimonial-slide__author">
                 <img src="img_depoimentos/cliente1.jpeg" alt="Foto da cliente Heryka Ferreira" loading="lazy">
@@ -406,7 +408,7 @@
             </article>
 
             <article class="testimonial-slide">
-              <div class="testimonial-slide__stars" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
+              <div class="testimonial-slide__stars" role="img" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
               <p class="testimonial-slide__text">"Entrega super rápida e a comida chega quentinha. O bife acebolado é maravilhoso!"</p>
               <div class="testimonial-slide__author">
                 <img src="img_depoimentos/cliente2.jpeg" alt="Foto do cliente Pedro Enrique" loading="lazy">
@@ -418,7 +420,7 @@
             </article>
 
             <article class="testimonial-slide">
-              <div class="testimonial-slide__stars" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
+              <div class="testimonial-slide__stars" role="img" aria-label="Avaliação 5 de 5 estrelas">★★★★★</div>
               <p class="testimonial-slide__text">"Atendimento nota mil e a marmita mista tem um tempero incrível. Já virei cliente fiel!"</p>
               <div class="testimonial-slide__author">
                 <img src="img_depoimentos/cliente3.png" alt="Foto da cliente Vanessa Oliveira" loading="lazy">
