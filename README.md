@@ -1,54 +1,52 @@
-# Marmita A Mari Que Fez - Landing Page
+# Marmita A Mari Que Fez — site demonstrativo
 
-Landing page responsiva e otimizada para um serviço de entrega de comida caseira. O projeto foca em conversão via WhatsApp, experiência do usuário (UX) e SEO.
+Site responsivo criado para apresentar a marca **Marmita A Mari Que Fez** e demonstrar uma experiência digital de cardápio e apresentação de produtos. Esta versão é destinada a portfólio; os pedidos pelo WhatsApp estão desativados.
 
- Tecnologias Utilizadas
+## Autoria e colaboração
 
-*   **HTML5** (Semântico)
-*   **CSS3** (Design Responsivo e Animações)
-*   **JavaScript Vanilla** (ES6+)
-*   **Schema.org** (Dados estruturados para SEO local)
+Projeto idealizado e criado por **Wânia Oliveira**, responsável pela concepção, identidade visual aplicada ao site, estruturação das páginas, implementação das interações e publicação. A marca, as imagens do portfólio e as fotografias incluídas neste projeto são de minha titularidade; as imagens foram criadas com auxílio de inteligência artificial, sob minha direção, e tenho autorização para utilizá-las.
 
- Funcionalidades
+## Tecnologias e recursos
 
-*   **Menu de Navegação:** Adaptável (Mobile First) com efeito de scroll.
-*   **Carrossel Hero:** Slider automático com efeito Parallax nas imagens de destaque.
-*   **Cardápio Interativo:** Sistema de filtragem por categoria (Tilápia, Frango, Feijoada, etc.).
-*   **Modal de Detalhes:** Visualização detalhada dos pratos com acompanhamentos e botão de pedido direto.
-*   **Depoimentos:** Carrossel de feedback de clientes.
-*   **Botões de WhatsApp demonstrativos:** O número está mascarado para proteger os dados de contato na versão de portfólio; os links não funcionam enquanto permanecerem assim.
-*   **SEO Local:** Configuração de Meta Tags, Open Graph e JSON-LD para indexação no Google.
+- **HTML5:** estrutura semântica, conteúdo e acessibilidade básica.
+- **CSS3:** layout responsivo, identidade visual, animações e estados de interação.
+- **JavaScript (ES6+):** menu mobile, carrosséis, filtros, modal de detalhes e animações de entrada com `IntersectionObserver`.
+- **Schema.org, Open Graph e meta tags:** dados estruturados e apresentação nos mecanismos de busca e redes sociais.
+- **Git, GitHub e GitHub Pages:** versionamento, hospedagem e publicação do site.
+- **Imagens criadas com IA:** recursos visuais produzidos para a marca e o portfólio.
 
- Estrutura do Projeto
+## Funcionalidades
+
+- Navegação adaptável para dispositivos móveis.
+- Carrossel de imagens principal com controles e indicadores.
+- Cardápio com filtros por categoria e modal de detalhes dos pratos.
+- Carrossel de depoimentos.
+- Layout responsivo e respeito à preferência por movimento reduzido.
+- Conteúdo visível mesmo sem JavaScript; animações de entrada usam `IntersectionObserver` quando disponível.
+- Ações de pedido ocultas nesta versão demonstrativa.
+
+## O que aprendi
+
+Durante a criação, pratiquei a construção de páginas semânticas, organização visual e responsividade com CSS, manipulação do DOM e eventos em JavaScript, criação de componentes interativos sem bibliotecas, acessibilidade e preferência por movimento reduzido, metadados para SEO e compartilhamento social, além de versionamento e publicação com GitHub Pages.
+
+## Estrutura do projeto
 
 ```text
-├── banner/             # Imagens principais e carrossel
-├── img_depoimentos/    # Fotos dos clientes
-├── logo_marca/         # Identidade visual (logotipo)
-├── index.html          # Estrutura principal
-├── style.css           # Estilização e layout
-└── script.js           # Lógica de interatividade
+├── banner/             # Imagens principais, produtos e carrossel
+├── img_depoimentos/    # Imagens usadas na seção de depoimentos
+├── logo_marca/         # Logotipo da marca
+├── index.html          # Estrutura e conteúdo da página
+├── style.css           # Estilos, animações e responsividade
+└── script.js           # Interações e comportamento da página
 ```
 
-## Como visualizar
+## Acesse
 
-Acesse a versão publicada no GitHub Pages:
+- **Site:** [waniaoliveira.github.io/mary-marmitaria-digital](https://waniaoliveira.github.io/mary-marmitaria-digital/)
+- **Repositório:** [github.com/WaniaOliveira/mary-marmitaria-digital](https://github.com/WaniaOliveira/mary-marmitaria-digital)
 
-https://waniaoliveira.github.io/mary-marmitaria-digital/
+Para visualizar localmente, clone o repositório e abra `index.html` no navegador.
 
-Para executar localmente, clone o repositório e abra o arquivo `index.html` no navegador:
+## Direitos e uso
 
-```bash
-git clone https://github.com/WaniaOliveira/mary-marmitaria-digital.git
-```
-
-## Observação
-
-**Privacidade:** o telefone do WhatsApp foi mascarado nos links e nos dados estruturados para a divulgação do projeto no portfólio/LinkedIn. Antes de usar o site para receber pedidos, substitua o placeholder pelo número oficial nos arquivos `index.html` e `script.js`. Os demais dados de contato e redes sociais também devem ser revisados e autorizados pela empresa antes de uma publicação definitiva.
-
- Licença
-
-Este projeto foi desenvolvido para a marca **Marmita A Mari Que Fez**. Todos os direitos de imagem e marca são reservados.
-
----
-Desenvolvido por [Wânia Oliveira]
+A marca **Marmita A Mari Que Fez** e os materiais visuais deste projeto são de minha titularidade, conforme informado pela autora. As imagens foram criadas com auxílio de IA. O projeto é apresentado para fins de portfólio; os botões de pedido permanecem ocultos nesta versão.

@@ -3,6 +3,9 @@
    JavaScript puro (Vanilla JS) — sem dependências externas.
    ===================================================================== */
 
+// Sem JavaScript, o conteúdo permanece visível; animações só são ativadas quando este arquivo carrega.
+document.documentElement.classList.add('js-enabled');
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* -------------------------------------------------------------------
@@ -140,19 +143,23 @@ document.addEventListener('DOMContentLoaded', () => {
      ------------------------------------------------------------------- */
   const revealElements = document.querySelectorAll('[data-reveal]');
 
-  const revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target); // anima apenas uma vez
-      }
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target); // anima apenas uma vez
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -60px 0px'
     });
-  }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -60px 0px'
-  });
 
-  revealElements.forEach((el) => revealObserver.observe(el));
+    revealElements.forEach((el) => revealObserver.observe(el));
+  } else {
+    revealElements.forEach((el) => el.classList.add('is-visible'));
+  }
 
 
   /* -------------------------------------------------------------------
