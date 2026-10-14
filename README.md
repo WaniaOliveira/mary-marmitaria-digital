@@ -16,7 +16,7 @@ Landing page responsiva e otimizada para um serviço de entrega de comida caseir
 *   **Cardápio Interativo:** Sistema de filtragem por categoria (Tilápia, Frango, Feijoada, etc.).
 *   **Modal de Detalhes:** Visualização detalhada dos pratos com acompanhamentos e botão de pedido direto.
 *   **Depoimentos:** Carrossel de feedback de clientes.
-*   **Integração WhatsApp:** Links diretos e botão flutuante para facilitar pedidos.
+*   **Botões de WhatsApp demonstrativos:** O número está mascarado para proteger os dados de contato na versão de portfólio; os links não funcionam enquanto permanecerem assim.
 *   **SEO Local:** Configuração de Meta Tags, Open Graph e JSON-LD para indexação no Google.
 
  Estrutura do Projeto
@@ -44,7 +44,7 @@ git clone https://github.com/WaniaOliveira/mary-marmitaria-digital.git
 
 ## Observação
 
-**Observação:** os dados de contato e redes sociais apresentados no site são utilizados para fins demonstrativos neste projeto e podem ser substituídos pelos dados oficiais da empresa após a publicação definitiva.
+**Privacidade:** o telefone do WhatsApp foi mascarado nos links e nos dados estruturados para a divulgação do projeto no portfólio/LinkedIn. Antes de usar o site para receber pedidos, substitua o placeholder pelo número oficial nos arquivos `index.html` e `script.js`. Os demais dados de contato e redes sociais também devem ser revisados e autorizados pela empresa antes de uma publicação definitiva.
 
  Licença
 
