@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
       accompaniments: ['Arroz branco', 'Feijão', 'Farofa', 'Legumes frescos'],
       preparation: 'Preparado diariamente com ingredientes frescos, temperos selecionados e cozimento artesanal para garantir sabor e qualidade.',
       badges: ['🥘 Feito na Hora', '🌿 Ingredientes Frescos', '🚚 Entrega Rápida', '❤️ Receita Caseira'],
-      whatsapp: 'https://wa.me/5561991527783?text=Quero%20pedir%20o%20Fil%C3%A9%20de%20Til%C3%A1pia'
+      whatsapp: 'https://wa.me/556199152#####?text=Quero%20pedir%20o%20Fil%C3%A9%20de%20Til%C3%A1pia'
     },
     frango: {
       name: 'Frango ao Molho',
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
       accompaniments: ['Arroz branco', 'Purê de batata', 'Salada verde', 'Farofa crocante'],
       preparation: 'Cozido com cuidado e temperos especiais, garantindo um molho cremoso e sabor marcante a cada garfada.',
       badges: ['🥘 Feito na Hora', '🌿 Ingredientes Frescos', '🚚 Entrega Rápida', '❤️ Receita Caseira'],
-      whatsapp: 'https://wa.me/5561991527783?text=Quero%20pedir%20o%20Frango%20ao%20Molho'
+      whatsapp: 'https://wa.me/556199152#####?text=Quero%20pedir%20o%20Frango%20ao%20Molho'
     },
     feijoada: {
       name: 'Feijoada',
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
       accompaniments: ['Arroz branco', 'Farofa', 'Couve refogada', 'Laranja fatiada'],
       preparation: 'Preparada lentamente com ingredientes selecionados e temperos caseiros para extrair todo o sabor típico brasileiro.',
       badges: ['🥘 Feito na Hora', '🌿 Ingredientes Frescos', '🚚 Entrega Rápida', '❤️ Receita Caseira'],
-      whatsapp: 'https://wa.me/5561991527783?text=Quero%20pedir%20a%20Feijoada'
+      whatsapp: 'https://wa.me/556199152#####?text=Quero%20pedir%20a%20Feijoada'
     },
     bife: {
       name: 'Bife Acebolado',
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
       accompaniments: ['Arroz branco', 'Batata frita', 'Salada fresca', 'Vinagrete'],
       preparation: 'Cozido com cuidado em fogo médio para manter a suculência, acompanhado de cebolas douradas no ponto perfeito.',
       badges: ['🥘 Feito na Hora', '🌿 Ingredientes Frescos', '🚚 Entrega Rápida', '❤️ Receita Caseira'],
-      whatsapp: 'https://wa.me/5561991527783?text=Quero%20pedir%20o%20Bife%20Acebolado'
+      whatsapp: 'https://wa.me/556199152#####?text=Quero%20pedir%20o%20Bife%20Acebolado'
     },
     moela: {
       name: 'Moela ao Molho',
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
       accompaniments: ['Arroz branco', 'Purê de mandioca', 'Salada de tomate', 'Farofa'],
       preparation: 'Cozida lentamente até ficar macia e saborosa, com um molho encorpado que penetra em cada pedaço.',
       badges: ['🥘 Feito na Hora', '🌿 Ingredientes Frescos', '🚚 Entrega Rápida', '❤️ Receita Caseira'],
-      whatsapp: 'https://wa.me/5561991527783?text=Quero%20pedir%20a%20Moela%20ao%20Molho'
+      whatsapp: 'https://wa.me/556199152#####?text=Quero%20pedir%20a%20Moela%20ao%20Molho'
     },
     mista: {
       name: 'Marmita Mista',
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
       accompaniments: ['Arroz branco', 'Feijão', 'Salada', 'Acompanhamento do dia'],
       preparation: 'Montada com ingredientes frescos e preparada diariamente para manter o sabor autêntico e caseiro.',
       badges: ['🥘 Feito na Hora', '🌿 Ingredientes Frescos', '🚚 Entrega Rápida', '❤️ Receita Caseira'],
-      whatsapp: 'https://wa.me/5561991527783?text=Quero%20pedir%20a%20Marmita%20Mista'
+      whatsapp: 'https://wa.me/556199152#####?text=Quero%20pedir%20a%20Marmita%20Mista'
     },
     entrega: {
       name: 'Entrega',
@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
       accompaniments: ['Opções variadas', 'Embalagem segura', 'Condimentos incluídos'],
       preparation: 'Preparamos e entregamos com todo cuidado para preservar o sabor e a temperatura ideal até sua casa.',
       badges: ['🚚 Entrega Rápida', '📦 Embalagem Segura', '❤️ Atendimento Dedicado'],
-      whatsapp: 'https://wa.me/5561991527783?text=Quero%20informações%20sobre%20a%20Entrega'
+      whatsapp: 'https://wa.me/556199152#####?text=Quero%20informações%20sobre%20a%20Entrega'
     }
   };
 
